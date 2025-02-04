@@ -73,10 +73,10 @@ def threePointApproach(points, n):
                     if rc2 < minCircle.r:
                         minCircle.x = xc
                         minCircle.y = yc
-                        minCircle.r = rc2
+                        minCircle.r = m.sqrt(rc2)
                         minCircle.area = m.pi * rc2
 
-    return minCircle.x, minCircle.y, m.sqrt(minCircle.r), minCircle.area
+    return minCircle.x, minCircle.y, minCircle.r, minCircle.area
 
 def twoPointApproach(points, n):
     minCircle = Circle()
@@ -94,10 +94,10 @@ def twoPointApproach(points, n):
                     break
             
             if valid:
-                if rc2 < minCircle.r:
+                if m.sqrt(rc2) < minCircle.r:
                     minCircle.x = xc
                     minCircle.y = yc
-                    minCircle.r = rc2
+                    minCircle.r = m.sqrt(rc2)
                     minCircle.area = m.pi * rc2
     
-    return minCircle.x, minCircle.y, m.sqrt(minCircle.r), minCircle.area
+    return minCircle.x, minCircle.y, minCircle.r, minCircle.area
