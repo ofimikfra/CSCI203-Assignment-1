@@ -19,7 +19,7 @@ for file in ['datasets/circle_10.txt', 'datasets/circle_20.txt', 'datasets/circl
     print()
 
     end_time_3 = time.time()
-    print(f"Execution time (2-point approach): {end_time_3 - end_time_2:.4f} seconds\n")
+    print(f"Execution time (3-point approach): {end_time_3 - end_time_2:.4f} seconds\n")
 
     print(f"Total execution time: {end_time_3 - start_time:.4f} seconds\n")
     
