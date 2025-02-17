@@ -14,7 +14,6 @@ for file in ['datasets/circle_10.txt', 'datasets/circle_20.txt', 'datasets/circl
 
     end_time_2 = time.time()
     print(f"Execution time (2-point approach): {end_time_2 - start_time:.4f} seconds\n")
-    print()
 
     threePointApproach(points, n)
     print()
