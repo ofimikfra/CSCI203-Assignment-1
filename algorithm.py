@@ -40,7 +40,7 @@ def twoPointApproach(points, n):
         minCircle.r = m.sqrt(rc2)
         minCircle.area = m.pi * rc2
 
-    found = True
+    found = False
 
     for i in range(0, n-1):
         for j in range(i+1, n):
@@ -63,7 +63,7 @@ def twoPointApproach(points, n):
                     minCircle.area = m.pi * rc2
                     minCirclePoints = [points[i], points[j]]
     
-    text = "" if found else "No valid circles found, returned circle with largest distance between 2 points."
+    text = "" if found else "\nNo valid circles found, returned circle with largest distance between 2 points."
     print(text)
     print("2-point approach:", minCirclePoints)
     print(f"Midpoint: {round(minCircle.x,4)}, {round(minCircle.y,4)}\nRadius: {round(minCircle.r,4)}\nArea: {round(minCircle.area,4)}")
