@@ -23,7 +23,7 @@ def plot_circle(points, center, radius, filename, approach, color):
     plt.grid()
     plt.show()
 
-for file in ['datasets/circle_10.txt', 'datasets/circle_20.txt', 'datasets/circle_40.txt', 'datasets/circle_100.txt']:
+for file in ['datasets/circle_10.txt', 'datasets/circle_20.txt', 'datasets/circle_40.txt', 'datasets/circle_100.txt', 'datasets/circle_400.txt', 'datasets/circle_800.txt']:
     
     start_time = time.time()
     
